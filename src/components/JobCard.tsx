@@ -1,5 +1,6 @@
 import React from "react";
 import { jobList } from "../utils/data";
+import { Link } from "react-router-dom";
 
 const JobCard: React.FC = () => {
   return (
@@ -38,14 +39,18 @@ const JobCard: React.FC = () => {
               <h3 className="text-white font-extrabold text-2xl mb-6 ">
                 {job.title}
               </h3>
-              <a
-                href={job.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="apply-btn"
-              >
-                Apply Now
-              </a>
+              <div>
+                <Link
+                  to={job.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="apply-btn"
+                >
+                  Apply Now
+                </Link>
+
+                <button className="apply-btn">Requirements</button>
+              </div>
             </div>
           </div>
         ))}
