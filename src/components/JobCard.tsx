@@ -1,5 +1,7 @@
 import React from "react";
 import { jobList } from "../utils/data";
+import { Link } from "react-router-dom";
+import { RequirementsModal } from "./modal/Modal";
 
 const JobCard: React.FC = () => {
   return (
@@ -8,7 +10,7 @@ const JobCard: React.FC = () => {
         Open Jobs at Hydro Bank
       </h2>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="max-w-7xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {jobList.map((job) => (
           <div
             key={job.id}
@@ -38,14 +40,21 @@ const JobCard: React.FC = () => {
               <h3 className="text-white font-extrabold text-2xl mb-6 ">
                 {job.title}
               </h3>
-              <a
-                href={job.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="apply-btn"
-              >
-                Apply Now
-              </a>
+              <div className="flex flex-row items-center gap-1 w-full">
+                <Link
+                  to={job.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="apply-btn"
+                >
+                  Apply Now
+                </Link>
+
+                {/* <button className="apply-btn" onClick={() => {}}>
+                  Know More
+                </button> */}
+                <RequirementsModal />
+              </div>
             </div>
           </div>
         ))}
