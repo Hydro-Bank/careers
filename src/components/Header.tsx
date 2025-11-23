@@ -1,5 +1,12 @@
 import Logo from "/hydrobank.jpeg";
 import { NavLinks } from "../utils/data";
+import {
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarTrigger,
+} from "@/components/ui/menubar";
 
 const Header = () => {
   return (
@@ -28,13 +35,22 @@ const Header = () => {
             </li>
           ))}
         </ul>
-
-        {/* Mobile Menu Icon */}
-        <div className="md:hidden flex flex-col gap-1 cursor-pointer">
-          <span className="w-6 h-[3px] bg-graident-primary"></span>
-          <span className="w-6 h-[3px] bg-graident-primary"></span>
-          <span className="w-6 h-[3px] bg-graident-primary"></span>
-        </div>
+        <Menubar className="bg-transparent border-0">
+          <MenubarMenu>
+            <MenubarTrigger className="w-14 flex flex-col justify-center items-center gap-1 md:hidden bg-neutral-800 rounded-sm ">
+              <span className="w-6 h-[3px] gradient-primary "></span>
+              <span className="w-6 h-[3px] gradient-primary "></span>
+              <span className="w-6 h-[3px] gradient-primary "></span>
+            </MenubarTrigger>
+            <MenubarContent className="bg-blue-950 border-0 text-blue-50">
+              {NavLinks.map((item, idx) => (
+                <MenubarItem key={idx} asChild>
+                  <a href={item.href}>{item.title}</a>
+                </MenubarItem>
+              ))}
+            </MenubarContent>
+          </MenubarMenu>
+        </Menubar>
       </div>
     </nav>
   );
