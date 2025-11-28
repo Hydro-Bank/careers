@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
           </h1>
 
           <p className="text-xl text-gray-300 mb-10">
-            Find your next job at Hydro Bank.
+            Find your next job at HydroFinance.
           </p>
 
           <div className="flex flex-wrap justify-center lg:justify-start gap-4">
@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
           <div className="p-1 rounded-2xl bg-gradient-to-tr from-cyan-400 via-pink-500 to-yellow-300">
             <img
               src={SideImage}
-              alt="Hydro Bank Illustration"
+              alt="HydroFinance Illustration"
               className="rounded-2xl w-[340px] md:w-[420px]"
             />
           </div>
@@ -79,11 +79,11 @@ const Hero: React.FC = () => {
         transition={{ duration: 0.8, delay: 0.3 }}
       >
         <h2 className="text-4xl font-bold gradient-primary-text mb-4">
-          Why Choose Hydro Bank?
+          Why Choose HydroFinance?
         </h2>
         <p className="text-gray-300 text-2xl leading-relaxed font-outfit">
           We’re shaping the next generation of banking — one that’s fast, human,
-          and visionary. At Hydro Bank, you’ll work with talented creators,
+          and visionary. At HydroFinance, you’ll work with talented creators,
           engineers, and designers who share one goal: to make finance simple
           and beautiful.
         </p>

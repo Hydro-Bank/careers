@@ -32,7 +32,7 @@ const About: React.FC = () => {
           {[
             {
               title: "Our Vision",
-              text: "Hydro Bank’s vision is to make banking simple, secure, and accessible for everyone. We believe in financial freedom, instant transactions, and a world where money moves as fast as ideas.",
+              text: "HydroFinance’s vision is to make banking simple, secure, and accessible for everyone. We believe in financial freedom, instant transactions, and a world where money moves as fast as ideas.",
             },
             {
               title: "Our Mission",

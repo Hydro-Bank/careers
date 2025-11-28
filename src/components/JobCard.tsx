@@ -7,7 +7,7 @@ const JobCard: React.FC = () => {
   return (
     <section id="jobs" className="bg-black py-20 px-8 text-center">
       <h2 className="text-4xl font-extrabold  gradient-primary-text mb-16">
-        Open Jobs at Hydro Bank
+        Open Jobs at HydroFinance
       </h2>
 
       <div className="max-w-7xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

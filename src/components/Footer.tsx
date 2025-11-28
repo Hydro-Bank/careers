@@ -14,7 +14,9 @@ const Footer: React.FC = () => {
         >
           {" "}
           © {new Date().getFullYear()}
-          <span className="font-semibold text-lg text-blue-400">HydroBank</span>
+          <span className="font-semibold text-lg text-blue-400">
+            HydroFinance
+          </span>
           <p className="text-sm text-white">All rights reserved.</p>
         </motion.div>
 
