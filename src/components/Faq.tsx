@@ -10,7 +10,7 @@ const faqs = [
   {
     question: "Do you offer remote roles?",
     answer:
-      "Yes, Hydro Bank supports remote work for many positions, especially in tech and marketing teams.",
+      "Yes, HydroFinance supports remote work for many positions, especially in tech and marketing teams.",
   },
   {
     question: "What is NDA?",
@@ -20,7 +20,7 @@ const faqs = [
   {
     question: "How does equity model work?",
     answer:
-      "Hydro Bank offers equity options to eligible employees as part of our compensation, aligning your success with the company’s growth.",
+      "HydroFinance offers equity options to eligible employees as part of our compensation, aligning your success with the company’s growth.",
   },
   {
     question: "How soon will I get a response?",
